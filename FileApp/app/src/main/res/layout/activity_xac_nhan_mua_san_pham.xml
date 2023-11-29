@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundapp"
+    tools:context=".activities.XacNhanMuaSanPhamActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardCornerRadius="6dp"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavender"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"
+                    android:text="Giỏ hàng"
+                    android:textColor="@color/black"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/backgroundapp"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iamgeView_AnhSanPhamInXacNhanMua"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/imagehome"
+                android:layout_margin="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_ThongTinSanPhamInXacNhanMua"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                app:layout_constraintStart_toEndOf="@+id/iamgeView_AnhSanPhamInXacNhanMua"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView_TenSanPhamInXacNhanMua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Áo phông Jujutsu kaishen"
+                    android:textColor="@color/black"
+                    android:textSize="28dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Màu sắc: "
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView_MauSacInXacNhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đen"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kích cỡ: "
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView_KichCoInXacNhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đen"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_GiaInXacNhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200000"
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Đ"
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_SoLuongInXacNhan"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_TieuDeSoLuong" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:background="@drawable/background_item_recycle"
+        android:layout_marginHorizontal="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_TongTienInXacNhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200000"
+                    android:textColor="@color/bgimgedelete"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginStart="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đ"
+                    android:textColor="@color/bgimgedelete"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_XacNhanMuaSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/background_button_xemthem"
+                android:text="Xác Nhận"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="16dp"
+
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/loaddingBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        />
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView_TieuDeGioHang"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:text="Giỏ hàng"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="32dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:id="@+id/layout_SanPhamMua"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/textView_TieuDeGioHang">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/iamgeView_AnhSanPhamInXacNhanMua"-->
+    <!--                android:layout_width="100dp"-->
+    <!--                android:layout_height="140dp"-->
+    <!--                android:src="@drawable/imagehome"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/linear_ThongTinSanPhamInXacNhanMua"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:orientation="vertical"-->
+    <!--                app:layout_constraintStart_toEndOf="@+id/iamgeView_AnhSanPhamInXacNhanMua"-->
+    <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_TenSanPhamInXacNhanMua"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Áo phông Jujutsu kaishen"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="28dp" />-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Màu sắc: "-->
+    <!--                        android:textSize="24dp" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/textView_MauSacInXacNhan"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Đen"-->
+    <!--                        android:textSize="24dp" />-->
+
+    <!--                </LinearLayout>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Kích cỡ: "-->
+    <!--                        android:textSize="24dp" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/textView_KichCoInXacNhan"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Đen"-->
+    <!--                        android:textSize="24dp" />-->
+
+    <!--                </LinearLayout>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/textView_GiaInXacNhan"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="200000"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="28dp"-->
+    <!--                        android:textStyle="bold" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Đồng"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="28dp"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+
+    <!--                <Spinner-->
+    <!--                    android:id="@+id/spinner_SoLuongInXacNhan"-->
+    <!--                    android:layout_width="200dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+    <!--                    app:layout_constraintTop_toBottomOf="@id/textView_TieuDeSoLuong" />-->
+
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/linear_TongTienInXacNhan"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="end"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:paddingEnd="20dp"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/linear_ThongTinSanPhamInXacNhanMua">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Tổng: "-->
+    <!--                    android:textColor="@color/bgimgedelete"-->
+    <!--                    android:textSize="28dp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_TongTienInXacNhan"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="200000"-->
+    <!--                    android:textColor="@color/bgimgedelete"-->
+    <!--                    android:textSize="28dp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Đồng"-->
+    <!--                    android:textColor="@color/bgimgedelete"-->
+    <!--                    android:textSize="28dp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/button_XacNhanMuaSanPham"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/layout_SanPhamMua"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            android:text="Xác Nhận"-->
+    <!--            android:paddingHorizontal="4dp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textSize="32dp"-->
+    <!--            android:background="@color/bgimgedelete"-->
+    <!--            />-->
+
+    <!--        <ProgressBar-->
+    <!--            android:id="@+id/loaddingBar"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/button_XacNhanMuaSanPham"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            android:visibility="gone"-->
+    <!--            android:layout_width="60dp"-->
+    <!--            android:layout_height="60dp"/>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</LinearLayout>

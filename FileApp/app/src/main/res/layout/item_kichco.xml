@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:padding="3dp"
+    android:id="@+id/linear_itemKichCo"
+    >
+    <TextView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:id="@+id/item_KichCo"
+        android:text="M"
+        android:background="#F0F1F8"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

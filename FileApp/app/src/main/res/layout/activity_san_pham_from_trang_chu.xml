@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundapp"
+    tools:context=".activities.SanPhamFromTrangChuActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="6dp"
+        android:layout_marginHorizontal="12dp"
+        >
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="fitXY"
+            android:id="@+id/image_BoSuuTapInSanPhamFromTrangChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imagehome"
+            />
+
+        <TextView
+            android:id="@+id/textView_TenBoSuuTapInSanPhamFromTrangChu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phong cách thời trang công sở hàn quốc"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/image_BoSuuTapInSanPhamFromTrangChu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_MoTaSanPhamFromTrangChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/testText"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TenBoSuuTapInSanPhamFromTrangChu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="24dp"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_TieuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Các sản phẩm"
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@id/textView_MoTaSanPhamFromTrangChu"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleView_SanPhamFromTrangChu"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TieuDe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

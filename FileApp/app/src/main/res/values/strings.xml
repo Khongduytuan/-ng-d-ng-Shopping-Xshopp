@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">XShop App</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="testText">Bộ anime truyền hình nổi tiếng "JUJUTSU KAISEN" đã đến với XShop! Bộ sưu tập lần này lấy cảm hứng từ phần "Hidden Inventory/Premature Death" tiết lộ quá khứ của Satoru Gojo và Suguru Geto, và phần "Shibuya Incident" tiếp tục dòng thời gian từ mùa đầu tiên. Các nhân vật được yêu thích và những hình ảnh mang tính biểu tượng trong bộ truyện được khắc họa trên những thiết kế áo thun của XShop.</string>
+
+    <string-array name="spinner_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="order_statuses">
+        <item>Giao thành công</item>
+        <item>Đang giao</item>
+        <item>Đã xác nhận</item>
+        <item>Chưa xác nhận</item>
+    </string-array>
+</resources>

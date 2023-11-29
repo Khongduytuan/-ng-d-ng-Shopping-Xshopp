@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ThemThongBaoAdminActivity">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/back"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm thông báo"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@id/image_back"
+        />
+
+    <ImageView
+        android:id="@+id/image_themthongbao"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/checked"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textAddNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/purple_200">
+        <EditText
+            android:id="@+id/editText_tenthongbao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên thông báo"
+            android:textSize="21dp"
+            />
+        <EditText
+            android:id="@+id/editText_noidungthongbao"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="15"
+            android:textSize="16dp"
+            android:hint="nội dung thông báo"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
